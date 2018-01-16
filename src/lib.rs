@@ -12,22 +12,16 @@ pub mod connection;
 pub mod shared;
 
 mod reading {
-  pub mod reader;
-  mod spec;
-  mod value;
+    pub mod reader;
+    mod spec;
+    mod value;
 }
 
 pub mod writing;
 
-use std::io::{
-  Result,
-  Error,
-  ErrorKind,
-  Write
-};
+use std::io::{Result, Error, ErrorKind, Write};
 
 
 
 pub use connection::Connection;
 pub use connection::connect;
-
